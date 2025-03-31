@@ -38,3 +38,4 @@ class Tarefa:
         db.executar(sql, params)
         db.desconectar()
  
+    def atualizar(idAtualizar)

@@ -16,3 +16,13 @@
         {% endfor %}
     </ul>
 {% endblock %}
+
+<ul>
+    {% for tarefa in tarefas %}
+    <li>
+        {{ tarefa.titulo }} - {{ tarefa.data_conclusao }} 
+        <a href="{{ url_for('update', idTarefa=tarefa.id) }}">Atualizar</a>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}
